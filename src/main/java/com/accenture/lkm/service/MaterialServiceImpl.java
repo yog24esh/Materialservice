@@ -25,7 +25,7 @@ public class MaterialServiceImpl implements MaterialService {
 
 	/*
 	 * Method - getMaterialCategoryById()
-	 * Use MaterialCategoryDAO object findById method to fetch the entity by --> categoryId
+	 * Use MaterialCategoryDAO object findOne method to fetch the entity by --> categoryId
 	 * Check if the entity is present
 	 * 		initialized the materialCategoryBean object
 	 * 		copy the properties value from entity to materialCategoryBean object
@@ -44,8 +44,9 @@ public class MaterialServiceImpl implements MaterialService {
 	
 	/*
 	 * Method - getMaterialCategories()
-	 * Use the MaterialCategoryDAO to get all the MaterialCategoryEntity objects
+	 * Use MaterialCategoryDAO object findAll method to fetch all the material category entities.
 	 * Check if list is not empty then 
+	 * 		Initialize the materialCategoryBeans list using ArrayList 
 	 * 		Declare a MaterialCategoryBean object with null value
 	 * 		Loop through all the material categories
 	 * 			Initialize a new MaterialCategoryBean object 
